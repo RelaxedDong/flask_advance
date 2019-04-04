@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .input-class{
+            background: #2aabd2;
+        }
+    </style>
+</head>
+<body>
+<form action="{{ url_for("setting") }}" method="post">
+    {{ form.username.label }}：{{ form.username(class='input-class') }}
+    {{ form.age.label }}：{{ form.age }}
+    <button type="submit">立即注册</button>
+</form>
+
+</body>
+</html>

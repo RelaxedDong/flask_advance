@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="{{ url_for("static",filename='sock_io.js') }}"></script>
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+</head>
+<body>
+
+<h1>后台推送</h1>
+<button onclick="Mybtn()">推送</button>
+<div id="messages"></div>
+<script src="{{ url_for("static",filename='my.js') }}"></script>
+</body>
+</html>
