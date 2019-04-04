@@ -15,7 +15,6 @@ app.secret_key = 'asjdfl'
 #           setattr(g,'user','xxxx')
 
 
-
 @app.before_first_request
 def before_first_request():
     print('before_first_request')
