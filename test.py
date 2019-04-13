@@ -38,6 +38,8 @@
 #     def __call__(self, friend):
 #         print( 'My name is %s...' % self.name)
 #         print( 'My friend is %s...' % friend)
+
+
 # p1 = Person(name='donghao',gender='女')
 # # p1('Time')
 # from werkzeug.serving import run_simple

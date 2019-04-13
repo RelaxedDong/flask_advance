@@ -6,7 +6,6 @@ from flask import Flask,render_template
 
 app = Flask(__name__)
 
-
 @app.before_first_request
 def before_first_request():
     print('before_first_request')
@@ -49,8 +48,6 @@ def say_hello(s):
 
 app.add_template_filter(say_hello,'say_hello')
 
-
-
 @app.add_template_global
 def myfunc(value):
     return 'this is  add_template_global'
@@ -61,3 +58,7 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+
+

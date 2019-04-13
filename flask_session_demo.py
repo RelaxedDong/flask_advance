@@ -5,13 +5,13 @@
 
 from flask import Flask
 from redis import Redis
-from flask_session import RedisSessionInterface
+from flask_session import RedisSessionInterface,MemcachedSessionInterface
 
 app = Flask(__name__)
 app.secret_key = 'asjdfl'
 
-conn = Redis(host='xxx',port='xxx')
-app.session_interface = RedisSessionInterface(conn,key_prefix='__')
+#conn = Redis(host='xxx',port='xxx')
+#app.session_interface = RedisSessionInterface(conn,key_prefix='__')
 
 
 @app.route('/')
